@@ -1,0 +1,19 @@
+{
+  "name": "otp-mailer-js",
+  "version": "1.0.0",
+  "description": "It is a package for generating otp and sending to the user's email securely.",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "https://github.com/NischalKShaj",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jest": "^29.7.0",
+    "nodemailer": "^6.9.16",
+    "nodemon": "^3.1.9"
+  }
+}

@@ -1,15 +1,32 @@
 {
   "name": "otp-mailer-js",
-  "version": "1.0.0",
-  "description": "It is a package for generating otp and sending to the user's email securely.",
-  "main": "app.js",
+  "version": "1.0.1",
+  "description": "A simple JavaScript library for generating OTPs and sending them securely via email.",
+  "main": "src/index.js",
   "type": "commonjs",
   "scripts": {
     "test": "jest",
-    "dev":"node ./test/randomTest.js"
+    "dev": "node ./test/randomTest.js",
+    "version": "npm run changelog && git add CHANGELOG.md && git commit -m 'chore(release): update version' && git push"
   },
   "author": "https://github.com/NischalKShaj",
-  "license": "ISC",
+  "license": "MIT",
+  "keywords": [
+    "otp",
+    "mailer",
+    "email",
+    "nodejs",
+    "otp-mailer",
+    "security"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NischalKShaj/otp-mailer-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NischalKShaj/otp-mailer-js/issues"
+  },
+  "homepage": "https://github.com/NischalKShaj/otp-mailer-js#readme",
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",

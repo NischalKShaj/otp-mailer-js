@@ -11,8 +11,8 @@ const sendOTP = async (to, subject, text) => {
   const transporter = createTransport.createTransport({
     service: "gmail",
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.PASSWORD,
+      user: process.env.EMAIL || "nischalkshaj5@gmail.com",
+      pass: process.env.PASSWORD || "aplv gfvz gqdd tyjy",
     },
   });
 

@@ -16,8 +16,8 @@ const sendOTP = async (to, subject, text) => {
     },
   });
 
-  console.log(process.env.EMAIL);
-  console.log(process.env.PASSWORD);
+  console.log("email", process.env.EMAIL);
+  console.log("password", process.env.PASSWORD);
 
   // configuring the mail options
   const mailOptions = {

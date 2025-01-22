@@ -3,7 +3,7 @@ const generateOTP = require("./otp-generator/otpGenerator.js");
 const sendOTP = require("./email/sendEmail.js");
 
 // function for creating the otp and the send that to the email
-const createAndSendOTP = async (email, otpLength = 4) => {
+const otpmailerjs = async (email, otpLength = 4) => {
   if (!email) {
     throw new Error("Email is required");
   }
@@ -22,12 +22,13 @@ const createAndSendOTP = async (email, otpLength = 4) => {
     return { success: true, otp };
   } catch (error) {
     console.error(
-      "Error while generating the otp and sending to the user's email",
+      `Error while generating the otp and sending to the user's email`,
       error
     );
     return { success: false, error };
   }
 };
 
+
 // exporting the main function
-module.exports = createAndSendOTP;
+module.exports = otpmailerjs;

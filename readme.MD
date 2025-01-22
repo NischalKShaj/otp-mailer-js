@@ -18,3 +18,9 @@ This library provides a simple way to send One-Time Passwords (OTPs) via email. 
 ```npm install otp-mailer-js```
 
 ## Usage
+
+after installation of the package import the package and pass the email and the otp's length
+
+```const otpmailerjs = require("otp-mailer-js")```
+
+```const generateOTP = otpmailer(email, otp_length)```

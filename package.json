@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "It is a package for generating otp and sending to the user's email securely.",
   "main": "app.js",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "dev":"node ./test/randomTest.js"
   },
   "author": "https://github.com/NischalKShaj",
   "license": "ISC",

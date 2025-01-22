@@ -5,7 +5,7 @@
   "main": "app.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "author": "https://github.com/NischalKShaj",
   "license": "ISC",
@@ -16,5 +16,10 @@
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.9",
     "supertest": "^7.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0"
   }
 }

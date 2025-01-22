@@ -1,15 +1,15 @@
 // file to send the generated otp to the given email
 
 // importing the required modules
-import { createTransport } from "nodemailer";
-import dotenv from "dotenv";
-dotenv.config();
+const createTransport  = require("nodemailer")
+const dotenv = require("dotenv")
+dotenv.config()
 
 // function for sending the otp to the email
 const sendOTP = async (to, subject, text) => {
   // creating a transporter object
-  const transporter = createTransport({
-    service: "gmail",
+  const transporter = createTransport.createTransport({
+    service: "yahoo",
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD,
@@ -28,4 +28,4 @@ const sendOTP = async (to, subject, text) => {
 };
 
 // exporting the function
-export default sendOTP;
+module.exports = sendOTP

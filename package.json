@@ -1,6 +1,6 @@
 {
   "name": "otp-mailer-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A simple JavaScript library for generating OTPs and sending them securely via email.",
   "main": "src/app.js",
   "type": "commonjs",
